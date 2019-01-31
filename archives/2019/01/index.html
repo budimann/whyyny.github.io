@@ -219,6 +219,83 @@
             <div class="postShorten-header">
                 <h1 class="postShorten-title">
                     
+                        <a class="link-unstyled" href="/2019/01/29/Tutorial/">
+                            Tutorial
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2019-01-29T17:22:15+07:00">
+	
+		    Jan 29, 2019
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <p>Halo, kali ini saya akan menjelaskan tentang bagaimana cara menggunakan Hexo. berikut langkah-langkahnya:</p>
+<ol>
+<li>Membuat Akun dan Repository Github<br>Buat akun Github. Jika kalian sudah mempunyai akun Github sebelumnya, kalian bisa menggunakan akun tersebut asalkan akun tersebut belum digunakan untuk membuat Hexo web. Setelah mendaftar, buat sebuah repository dengan cara:<br>New Repository -&gt; isikan nama repository wajib dengan nama: (username-kalian).github.io -&gt; Set Public -&gt; Create repository.</li>
+</ol>
+<p>Pada gambar diatas memang terdapat sebuah error, hal itu dikarenakan saya telah membuat repository dengan nama tersebut sebelumnya.</p>
+<p>Langkah pertama telah selesai, selanjutnya adalah</p>
+<ol start="2">
+<li>Install Node JS &amp; Hexo<br>Download dan install Node Js.</li>
+</ol>
+<p>Kalian bisa membuka Hexo Guide untuk melihat command yang digunakan. Untuk install Hexo, masukkan command</p>
+<p>1<br>npm install -g hexo-cli<br>Jika sudah, kalian bisa meng-check Hexo kalian dengan command</p>
+<p>1<br>hexo -v<br>maka akan muncul versi Hexo kalian dll.</p>
+<ol start="3">
+<li>Deploy Hexo dan Apply Theme<br>Buka Command Prompt as Admin kemudian arahkan path ke folder tempat menaruh web yang akan kalian buat. Untuk tutorial mengarahkan path Command Prompt kalian bisa mencarinya di google. Jika sudah kalian arahkan, ketik command</li>
+</ol>
+<p>1<br>hexo init nama-repository-kalian<br>Kemudian enter, untuk nama repository sudah pasti adalah tadi yang username-kalian.github.io.</p>
+<p>Akan muncul progress connect Hexo kalian dengan repository. Jika sudah selesai, cobalah masukkan command</p>
+<p>1<br>hexo server<br>Kemudian buka browser kalian dan ketikkan url localhost:4000 . Jika muncul tampilan seperti dibawah ini, artinya kalian telah berhasil.</p>
+<p>Selanjutnya buka website Hexo Theme dan download salah satu tema yang kalian inginkan. Kalian bisa download tema lewat zip atau git. Perlu diketahui bahwa tiap tiap tema terdapat cara installnya sendiri dan mempunyai plugin sendiri. Jadi silahkan buka dan baca-baca wiki yang terdapat pada deskripsi tema. Jika kalian sudah mendownload tema, taruh folder tema ke dalam folder Themes pada folder web kalian. Silahkan masukkan plugin-plugin yang dibutuhkan untuk tema kalian, adapun jika tidak ada maka tidak usah. Untuk menginstall plugin sendiri caranya adalah memasukkan command plugin ke dalam Command Prompt di dalam folder website kalian tentunya.</p>
+<p>Berikutnya adalah masuk ke bagian editing. Kalian bisa menggunakan software script editor untuk web seperti Atom, Dreamweaver, Notepad++ dll. Disini saya menggunakan Atom, kalian bisa download disini. Buka Atom atau script editor lain dan buka script _config.yml yang terdapat di dalam folder website kalian. Pada bagian theme, isikan dengan nama tema kalian.</p>
+<p>Silahkan save dan ketik ulang hexo server pada Command Prompt kemudian buka localhost:4000 maka tema kalian akan terpasang.</p>
+<p>Untuk men-deploy website kalian, masukkan command berikut berturut-turut</p>
+<p>1<br>hexo generate –watch</p>
+<p>1<br>hexo clean</p>
+<p>1<br>hexo deploy<br>Jika sudah, silahkan buka url username-kalian.github.io di browser kalian. Jika muncul website, artinya langkah ketiga ini telah berhasil.</p>
+<ol start="4">
+<li>Buat Post<br>Untuk membuat post, masukkan command<br>1<br>hexo new post “judul-post-kalian”<br>Post dan folder tempat menampung gambar akan terbuat di folder source/post/judul-post.</li>
+</ol>
+<p>Di dalamnya kalian bisa mengetik sebuah content apapun terserah kalian.</p>
+<p>Untuk menambahkan gambar, caranya adalah pindahkan gambar ke dalam folder yang parent dan namanya sama dengan post kalian. Jika sudah, copy kan nama gambar beserta ekstensinya. Kemudian pada script post, tambahkan<br>1<br><img src="nama-gambar-kalian" alt="alt" title="alt"><br>Alt maksudnya adalah text yang akan ditampilkan ketika user gagal memuat gambar.</p>
+<ol start="5">
+<li>Buat Halaman About<br>Untuk setiap tema, penerapan halaman about biasanya berbeda-beda. Jadi silahkan ikuti instruksi yang sudah disediakan pada wiki tema yang kalian pilih.<br>Untuk tema yang saya pilih, pembuatan About sangatlah simple. Yaitu tinggal memasukkan command</li>
+</ol>
+<p>1<br>hexo new page about<br>Silahkan isikan biografi kalian pada halaman About jika sudah berhasil dibuat.</p>
+<p>Kira-kira begitulah tutorial ini, sekian sampai jumpa.</p>
+
+                    
+                        
+
+                    
+                    
+                        <p>
+                            <a href="/2019/01/29/Tutorial/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
                         <a class="link-unstyled" href="/2019/01/04/hello-world/">
                             Tutorial
                         </a>
