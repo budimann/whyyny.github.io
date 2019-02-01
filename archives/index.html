@@ -237,6 +237,35 @@
             
                 <div class="postShorten-content">
                     <p>Halo, kali ini saya akan menjelaskan tentang bagaimana cara menggunakan Hexo. berikut langkah-langkahnya:</p>
+<h1 id="Membuat-Akun-dan-Repository-Github"><a href="#Membuat-Akun-dan-Repository-Github" class="headerlink" title="Membuat Akun dan Repository Github"></a>Membuat Akun dan Repository Github</h1><p>langkah pertama buat akun <a href="https://github.com/" target="_blank" rel="noopener"><strong style="color:red;"><strong><em>CLICK HERE FOR GITHUB</em></strong></strong></a>, jika kalian sudah Membuat akun andah bisa membuat Repository yang digunakan untuk membuat hexo WEB,<br>jika kalian tidak tau ini caranya dengan menggunakan gambar</p>
+<img src="/2019/01/29/Tutorial/new_repo1.png" title="new repo">
+<p>Setelah itu lakukan hal yang seperti dibawah<br> <strong><em>yang gambar dibawah ada error saat penulisan name Repository itu tidak apa-apa karena itu nama yang sudah saya pakai, jadi jangan bingung</em></strong></p>
+<img src="/2019/01/29/Tutorial/new_repo2.png" title="create repo">
+<h1 id="Install-Node-JS-amp-Hexo"><a href="#Install-Node-JS-amp-Hexo" class="headerlink" title="Install Node JS &amp; Hexo"></a>Install Node JS &amp; Hexo</h1><p>Download <a href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><strong>Node JS</strong></a></p>
+<p>Aslinya ada yang dari Tutorial saya yang membahas download hexo yaitu lewat <br>caranya <a href="https://gist.github.com/btfak/18938572f5df000ebe06fbd1872e4e39" target="_blank" rel="noopener"><strong>Hexo Guide</strong></a></p>
+<p>jangan lupa ya cara install semua itu pake <strong>CMD</strong><br>ini lah urutan cara Install hexo<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>jika kalian bingung “sudah keinstall apa belum” bisa juga dicek lewat<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure></p>
+<p>ini contoh gambar yang sudah install hexo</p>
+<img src="/2019/01/29/Tutorial/hexo.png" title="create repo">
+<h1 id="Deploy-Hexo-dan-Apply-Theme"><a href="#Deploy-Hexo-dan-Apply-Theme" class="headerlink" title="Deploy Hexo dan Apply Theme"></a>Deploy Hexo dan Apply Theme</h1><p>Setelah itu buka CMD kalian/Anda kemudian arahkan kefolder tempat untuk menaruh folder WEB,<br>untuk Tutorial mengarahkan path CMD yaitu kalian bisa mencari sendiri di google.<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init nama-repository-kalian</span><br></pre></td></tr></table></figure></p>
+<p>Kemudian enter, untuk nama repository sudah pasti adalah tadi yang username-kalian.github.io.</p>
+<img src="/2019/01/29/Tutorial/ini.png" title="create init">
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>kemudian buka browser kalian katik di tab url denga <em>localhost:4000</em></p>
+<img src="/2019/01/29/Tutorial/jadi.png" title="dah jadi">
+<p><br><br>Selanjutnya buka website <a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">Hexo Theme</a> dan download salah satu tema yang kalian inginkan. Kalian bisa download tema lewat zip atau git. Perlu diketahui bahwa tiap tiap tema terdapat cara installnya sendiri dan mempunyai plugin sendiri. Jadi silahkan buka dan baca-baca wiki yang terdapat pada deskripsi tema. Jika kalian sudah mendownload tema, taruh folder tema ke dalam folder Themes pada folder web kalian. Silahkan masukkan plugin-plugin yang dibutuhkan untuk tema kalian, adapun jika tidak ada maka tidak usah. Untuk menginstall plugin sendiri caranya adalah memasukkan command plugin ke dalam Command Prompt di dalam folder website kalian tentunya.</p>
+<p>Berikutnya adalah masuk ke bagian editing. Kalian bisa menggunakan software script editor untuk web seperti Atom, Dreamweaver, Notepad++ dll. Disini saya menggunakan Atom, kalian bisa download disini. Buka Atom atau script editor lain dan buka script <em>config.yml yang terdapat di dalam folder website kalian. Pada bagian theme, isikan dengan nama tema kalian.</em></p>
+<img src="/2019/01/29/Tutorial/theme.png" title="dah jadi">
+<p><br><br>Silahkan save dan ketik ulang hexo server pada Command Prompt kemudian buka <em>localhost:4000</em> maka tema kalian akan terpasang<br><img src="/2019/01/29/Tutorial/theme2.png" title="dah jadi"><br><br><br>Untuk men-deploy website kalian, masukkan command Berikutnya<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --watch</span><br><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p>Jika sudah, silahkan buka url <strong><em>username-kalian.github.io</em></strong> di browser kalian. Jika muncul website, artinya langkah ketiga ini telah berhasil.</p>
+<h1 id="Buat-Post"><a href="#Buat-Post" class="headerlink" title="Buat Post"></a>Buat Post</h1><p>Untuk membuat post, masukkan command<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post "judul-post-kalian"</span><br></pre></td></tr></table></figure></p>
+<p>Post dan folder tempat menampung gambar akan terbuat di folder source/post/judul-post.</p>
+<img src="/2019/01/29/Tutorial/post.png" title="dah jadi">
+<h1 id="Buat-Halaman-About"><a href="#Buat-Halaman-About" class="headerlink" title="Buat Halaman About"></a>Buat Halaman About</h1><p>Untuk setiap tema, penerapan halaman about biasanya berbeda-beda. Jadi silahkan ikuti instruksi yang sudah disediakan pada wiki tema yang kalian pilih.<br>Untuk tema yang saya pilih, pembuatan About sangatlah simple. Yaitu tinggal memasukkan command<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></p>
+<img src="/2019/01/29/Tutorial/about.png" title="dah jadi">
+<p>Ya begitulah Tutorialnya semoga berguna</p>
+<h3 id="maaf-susunannya-seperti-punya-Web-sebelah"><a href="#maaf-susunannya-seperti-punya-Web-sebelah" class="headerlink" title="maaf susunannya seperti punya Web sebelah"></a>maaf susunannya seperti punya Web sebelah</h3><p>Bisa di cek yaitu <a href="hafizxd.github.io">here</a></p>
 
                     
                         
